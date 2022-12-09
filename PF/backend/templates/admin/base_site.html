@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block blockbots %}
+<link href="{% static 'custom_styles.css' %}" rel="stylesheet">
+<meta content="NONE,NOARCHIVE" name="robots">
+{% endblock %}
+{% block branding %}
+<h1>
+    Toronto Fitness Club
+</h1>
+{% endblock %}
+{% block nav-global %}{% endblock %}
