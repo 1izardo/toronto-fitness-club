@@ -3,7 +3,7 @@
 This is a project I completed in December 2022 for CSC309: Programming on the Web. I've recorded a (very rough) demo, which can be viewed below. Hopefully I will muster up the courage to figure out how to host this app one day...
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=O1KxClhnyxc" target="_blank">
- <img src="http://img.youtube.com/vi/O1KxClhnyxc/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="2" />
+ <img src="http://img.youtube.com/vi/O1KxClhnyxc/mqdefault.jpg" alt="Watch the video" border="2" />
 </a>
 
 ## Tech Stack
