@@ -1,4 +1,11 @@
-import { ActionIcon, Paper, ScrollArea, TextInput } from "@mantine/core";
+import {
+  ActionIcon,
+  Center,
+  Paper,
+  ScrollArea,
+  Text,
+  TextInput,
+} from "@mantine/core";
 import { IconArrowRight, IconCurrentLocation, IconSearch } from "@tabler/icons";
 import { useState } from "react";
 import StudioItem from "./StudioItem";
@@ -90,16 +97,22 @@ function MapUI({
             },
           })}
         >
-          {studios.features.map((studio) => {
-            return (
-              <StudioItem
-                studio={studio}
-                curFeature={curFeature}
-                setCurFeature={setCurFeature}
-                key={studio.properties?.id}
-              />
-            );
-          })}
+          {studios.features.length > 0 ? (
+            studios.features.map((studio) => {
+              return (
+                <StudioItem
+                  studio={studio}
+                  curFeature={curFeature}
+                  setCurFeature={setCurFeature}
+                  key={studio.properties?.id}
+                />
+              );
+            })
+          ) : (
+            <Center>
+              <Text c="dimmed">No studios found.</Text>
+            </Center>
+          )}
         </Paper>
       </div>
     </div>
